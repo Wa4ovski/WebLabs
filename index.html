@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web: Lab1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image" href="https://faviconka.ru/ico/1/faviconka.ru_1_150074.ico">
+</head>
+<body>
+
+
+     <header>
+         <h1 class="main-header" id="right-text">Лабораторная работа №1. Вариант: 13105</h1>
+         <h1 class="main-header" id="left-text">Ваховский Павел Андреевич, P3213</h1>
+     </header>
+        <section class="content">
+
+<!--<input class="button"  type="submit" value="Submit" onclick="submit()">-->
+
+    <div> </div>
+    <div  >
+<!--        <header>-->
+<!--            <h2 class="card-header">Graphics</h2>-->
+<!--        </header>-->
+        <svg class="graphics" id="areas">
+
+            <line x1="250" y1="500" x2="250" y2="0" stroke="#000"></line>
+            <line x1="0" y1="250" x2="500" y2="250" stroke="#000"></line>
+            <!-- OX R-s -->
+            <line x1="50" y1="253" x2="50" y2="247" stroke="#000"></line>
+            <line x1="150" y1="253" x2="150" y2="247" stroke="#000"></line>
+            <line x1="350" y1="253" x2="350" y2="247" stroke="#000"></line>
+            <line x1="450" y1="253" x2="450" y2="247" stroke="#000"></line>
+            <text x="45" y="245">R</text>
+            <text x="445" y="245">R</text>
+            <text x="140" y="245">R/2</text>
+            <text x="340" y="245">R/2</text>
+            <!-- OX R-s -->
+            <line x1="247" y1="50" x2="253" y2="50" stroke="#000"></line>
+            <line x1="247" y1="150" x2="253" y2="150" stroke="#000"></line>
+            <line x1="247" y1="350" x2="253" y2="350" stroke="#000"></line>
+            <line x1="247" y1="450" x2="253" y2="450" stroke="#000"></line>
+            <text x="255" y="55">R</text>
+            <text x="255" y="455">R</text>
+            <text x="255" y="355">R/2</text>
+            <text x="255" y="155">R/2</text>
+            <!-- figures -->
+            <rect x="250" y="250" width="100" height="200" fill-opacity="0.5" fill="blue"></rect>
+            <polygon points="250,250 250,150 350,250"fill-opacity="0.5" fill="blue"></polygon>
+            <path d="M250,250 150,250 A100 100 0 0 1 250 150" fill-opacity="0.5" fill="blue" stroke="navy"></path>
+            <!--  arrows-->
+            <line x1="500" y1="250" x2="492" y2="248" stroke="#000"></line>
+            <line x1="500" y1="250" x2="492" y2="252" stroke="#000"></line>
+            <line x1="250" y1="0" x2="248" y2="8" stroke="#000"></line>
+            <line x1="250" y1="0" x2="252" y2="8" stroke="#000"></line>
+
+        </svg>
+    </div>
+    <br>
+         <br>
+            <br>
+            <div  id="values">
+                <header>
+                    <h2 class="card-header">Values</h2>
+                </header>
+
+
+
+
+
+                <tr>
+
+                    <div id="input-form">
+                        <table id="input-grid">
+                            <!-- X Value -->
+
+                            <tr>
+                                <td class="input-grid-label">
+                                    <label> <!--for="x-buttons"-->X: </label>
+                                </td>
+                                <td id="input-grid-value">
+                                    <input class="x-button" id="x-button0" type="button" onclick="chooseX(this)" value="-5">
+                                    <input class="x-button" id="x-button1" type="button" onclick="chooseX(this)" value="-4">
+                                    <input class="x-button" id="x-button2" type="button" onclick="chooseX(this)" value="-3">
+                                    <input class="x-button" id="x-button3" type="button" onclick="chooseX(this)" value="-2">
+                                    <input class="x-button" id="x-button4" type="button" onclick="chooseX(this)" value="-1">
+                                    <input class="x-button" id="x-button5" type="button" onclick="chooseX(this)" value="0">
+                                    <input class="x-button" id="x-button6" type="button" onclick="chooseX(this)" value="1">
+                                    <input class="x-button" id="x-button7" type="button" onclick="chooseX(this)" value="2">
+                                    <input class="x-button" id="x-button8" type="button" onclick="chooseX(this)" value="3">
+
+                                </td>
+                            </tr>
+                            <!-- Y Value -->
+                            <tr>
+                                <td class="input-grid-label">
+                                    <label for="y-textinput">Y:</label>
+                                </td>
+
+                                <td class="input-grid-value">
+                                    <input id="y-textinput" type="text" name="yval" maxlength="10" autocomplete="off" placeholder="Number from -3 to 5...">
+                                </td>
+                            </tr>
+
+                            <!-- R Value -->
+
+                            <tr>
+                                <td class="input-grid-label">
+                                    <label>R:</label>
+                                </td>
+
+                                <td class="input-grid-value r-radio-group">
+
+                                    <div class="center-labeled">
+                                        <label class="add-labeled rbox-label" for="r-radio0">1</label>
+                                        <input class="r-radio" id="r-radio0" type="radio" name="rval" value="1">
+                                    </div>
+
+                                    <div class="center-labeled">
+                                        <label class="add-labeled rbox-label" for="r-radio1">2</label>
+                                        <input class="r-radio" id="r-radio1" type="radio" name="rval" value="2">
+                                    </div>
+
+                                    <div class="center-labeled">
+                                        <label class="add-labeled rbox-label" for="r-radio2">3</label>
+                                        <input class="r-radio" id="r-radio2" type="radio" name="rval" value="3">
+                                    </div>
+
+                                    <div class="center-labeled">
+                                        <label class="add-labeled rbox-label" for="r-radio3">4</label>
+                                        <input class="r-radio" id="r-radio3" type="radio" name="rval" value="4">
+                                    </div>
+
+                                    <div class="center-labeled">
+                                        <label class="add-labeled rbox-label" for="r-radio4">5</label>
+                                        <input class="r-radio" class="custom-radio" id="r-radio4" type="radio" name="rval" value="5">
+                                    </div>
+                                </td>
+                            </tr>
+
+
+
+                        </table>
+                        <input class="button" type="submit" value="Submit" onclick="submit()">
+                        <input class="button" type="reset" value="Reset" onclick="reset()">
+                    </div>
+
+
+                    </td>
+                </tr>
+                </table>
+
+            </div>
+
+    <ul id="errors" style="list-style-type: none"> </ul>
+
+
+        </section>
+
+    <table id="result-table">
+        <tbody>
+        <tr class="table-header">
+            <th class="coords-col">X</th>
+            <th class="coords-col">Y</th>
+            <th class="coords-col">R</th>
+            <th class="time-col">Время запроса</th>
+            <th class="time-col">Время исполнения</th>
+            <th class="verdict-col">Попадание</th>
+
+        </tr>
+        </tbody>
+    </table>
+
+    <script src="js/jquery-3.6.0.min.js">;
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
